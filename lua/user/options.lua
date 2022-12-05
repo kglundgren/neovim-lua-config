@@ -9,8 +9,10 @@ vim.cmd('set showtabline=1') -- Show tab-line only if there are at least two tab
 vim.cmd('set nowrap') -- No line-wrapping on long lines.
 
 -- Python --
-vim.g.python_host_prog = 'C:\\Python27\\python.exe'
-vim.g.python3_host_prog = 'C:\\Program Files\\Python39\\python.exe'
+-- vim.g.python_host_prog = nil
+if vim.env.python3_path then
+    vim.g.python3_host_prog = vim.env.python3_path
+end
 
 -- Netrw --
 vim.g.netrw_banner = 0
