@@ -19,9 +19,9 @@ map('n', '<leader>n', ':bnext<CR>', opts) -- Navigate buffers.
 map('n', '<leader>b', ':bprevious<CR>', opts)
 map('n', '<leader>l', ':set nohlsearch!<CR>', opts)
 map("n", "<leader>kc", "<S-i>// <Esc>", opts) -- Comment line.
-map("n", "<leader>ku", "^dw", opts) -- Uncomment line.
 map("v", "<leader>kc", ":norm i// <CR>", opts) -- Comment selected lines.
-map("v", "<leader>ku", ":norm dw<CR>", opts) -- Uncomment selected lines.
+map("n", "<leader>ku", "^3x", opts) -- Uncomment line.
+map("v", "<leader>ku", ":norm ^3x<CR>", opts) -- Uncomment selected lines.
 
 -- Windows-specific bindings
 if (vim.loop.os_uname().sysname == "Windows_NT") then
