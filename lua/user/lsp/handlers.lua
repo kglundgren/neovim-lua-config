@@ -12,8 +12,6 @@ M.setup = function()
         vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
     end
 
-    --vim._ts_get_minimum_language_version
-
     local config = {
         virtual_text = false, -- Disable virtual text.
         signs = {
@@ -73,7 +71,7 @@ local function lsp_keymaps(bufnr)
     vim.api.nvim_buf_set_keymap(bufnr, "n", "[d", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, "n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
-    vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
+    vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]] -- Adds the :Format command to format a buffer with LSP.
 end
 
 M.on_attach = function(client, bufnr)
