@@ -57,7 +57,10 @@ return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig' -- Enable LSP. Official neovim source.
     use 'williamboman/mason.nvim' -- LSP installer.
     -- This plugin bridges mason.nvim with the official lspconfig plugin - making it easier to use both plugins together.
-    use 'williamboman/mason-lspconfig.nvim' 
+    use 'williamboman/mason-lspconfig.nvim'
+
+    -- Treesitter
+    use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
     -- Automatically set up your configuration after cloning packer.nvim.
     -- Put this at the end after all plugins.
