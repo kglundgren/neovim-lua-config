@@ -44,7 +44,7 @@ map('v', '<', '<gv', opts) -- Indent, and stay in indent mode.
 map('v', '>', '>gv', opts)
 map('v', '<A-j>', ':m .+1<CR>==', opts) -- Move text up and down.
 map('v', '<A-k>', ':m .-2<CR>==', opts)
-map("v", "p", '"_dP', opts) -- Disable regular visual paste behavior.
+map("v", "p", '"_dP', opts) -- Disable regular (annoying) visual paste behavior.
 
 -- Visual Block
 map('x', '<A-j>', ":move '>+1<CR>gv-gv", opts) -- Move text up and down
