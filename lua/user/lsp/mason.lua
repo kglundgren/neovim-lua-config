@@ -3,7 +3,6 @@ local servers = {
     "clangd",
 }
 
-
 local settings = {
     ui = {
         border = "none",

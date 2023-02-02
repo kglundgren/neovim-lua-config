@@ -70,7 +70,7 @@ cmp.setup({
         ['<C-e>'] = cmp.mapping.abort(),
 
         -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-        ['<CR>'] = cmp.mapping.confirm({ select = true }), 
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
 
         -- "Super-tab" like mapping. Tab for forwards, S-Tab for backwards.
         ['<Tab>'] = cmp.mapping(function(fallback)

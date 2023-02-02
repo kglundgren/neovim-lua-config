@@ -18,6 +18,8 @@ map('n', '<leader>x', ':q<CR>', opts) -- Quit with \x.
 map('n', '<leader>n', ':bnext<CR>', opts) -- Navigate buffers.
 map('n', '<leader>b', ':bprevious<CR>', opts)
 map('n', '<leader>l', ':set nohlsearch!<CR>', opts)
+map('n', '<leader>v', ':vsplit', opts)
+map('n', '<leader>h', ':split', opts)
 map("n", "<leader>kc", "<S-i>// <Esc>", opts) -- Comment line.
 map("v", "<leader>kc", ":norm i// <CR>", opts) -- Comment selected lines.
 map("n", "<leader>ku", "^3x", opts) -- Uncomment line.
