@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim' -- Packer can manage itself.
     use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from Vim in Neovim.
     use 'nvim-lua/plenary.nvim' -- Useful lua functions used by lots of plugins.
+    use 'windwp/nvim-autopairs' -- Autotomatically complete brackets and quotes. [] {} "" '', etc.
 
     -- Colorschemes
     use 'ellisonleao/gruvbox.nvim'

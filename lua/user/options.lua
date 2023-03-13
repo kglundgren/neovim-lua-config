@@ -7,6 +7,7 @@ vim.cmd('set path+=**') -- Enables :find to search directories recursively.
 vim.cmd('set wildmenu') -- Enables tab-completion of files when using :find to search.
 vim.cmd('set showtabline=1') -- Show tab-line only if there are at least two tab pages.
 vim.cmd('set nowrap') -- No line-wrapping on long lines.
+vim.cmd('set shell=pwsh.exe') -- Sets Powershell as the default shell/terminal.
 
 -- Python --
 -- vim.g.python_host_prog = nil
@@ -18,10 +19,10 @@ end
 vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
 vim.g.netrw_altv = 1
-vim.g.netrw_winsize = 30
+vim.g.netrw_winsize = 20
 
 -- Autocmds -- 
--- Tab settings per filetype.
+-- Tab settings per filetype. Important! It's better to set this in ftplugin files.
 -- autocmd FileType c setlocal shiftwidth=4
 -- autocmd FileType javascript setlocal shiftwidth=4
 -- autocmd FileType html setlocal shiftwidth=4

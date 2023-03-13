@@ -7,6 +7,7 @@ configs.setup {
         "c",
         "cpp",
         "javascript",
+        "c_sharp",
     },
     sync_install = false,
     ignore_install = { "" }, -- List of parsers to ignore installing.

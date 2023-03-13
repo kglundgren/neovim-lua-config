@@ -20,10 +20,11 @@ map('n', '<leader>b', ':bprevious<CR>', opts)
 map('n', '<leader>l', ':set nohlsearch!<CR>', opts)
 map('n', '<leader>v', ':vsplit', opts)
 map('n', '<leader>h', ':split', opts)
-map("n", "<leader>kc", "<S-i>// <Esc>", opts) -- Comment line.
-map("v", "<leader>kc", ":norm i// <CR>", opts) -- Comment selected lines.
-map("n", "<leader>ku", "^3x", opts) -- Uncomment line.
-map("v", "<leader>ku", ":norm ^3x<CR>", opts) -- Uncomment selected lines.
+map('n', "<leader>kc", "<S-i>// <Esc>", opts) -- Comment line.
+map('v', "<leader>kc", ":norm i// <CR>", opts) -- Comment selected lines.
+map('n', "<leader>ku", "^3x", opts) -- Uncomment line.
+map('v', "<leader>ku", ":norm ^3x<CR>", opts) -- Uncomment selected lines.
+map('n', '<leader>`', ':below 20 split<CR>:terminal<CR>', opts) -- Open a terminal below the current split.
 
 -- Windows-specific bindings
 if (vim.loop.os_uname().sysname == "Windows_NT") then
@@ -51,3 +52,6 @@ map("v", "p", '"_dP', opts) -- Disable regular (annoying) visual paste behavior.
 -- Visual Block
 map('x', '<A-j>', ":move '>+1<CR>gv-gv", opts) -- Move text up and down
 map('x', '<A-k>', ":move '<-2<CR>gv-gv", opts)
+
+-- Terminal 
+map('t', '<Esc>', '<C-\\><C-n>', opts)
