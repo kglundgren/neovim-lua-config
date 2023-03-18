@@ -25,6 +25,7 @@ map('v', "<leader>kc", ":norm i// <CR>", opts) -- Comment selected lines.
 map('n', "<leader>ku", "^3x", opts) -- Uncomment line.
 map('v', "<leader>ku", ":norm ^3x<CR>", opts) -- Uncomment selected lines.
 map('n', '<leader>`', ':below 20 split<CR>:terminal<CR>', opts) -- Open a terminal below the current split.
+map('n', '<leader>cd', ':cd %:h<CR>', opts) -- Change to the current dir.
 
 -- Windows-specific bindings
 if (vim.loop.os_uname().sysname == "Windows_NT") then
