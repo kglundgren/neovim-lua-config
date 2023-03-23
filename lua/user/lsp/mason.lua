@@ -1,7 +1,8 @@
 local servers = {
     "lua_ls",
     "clangd",
-    "tsserver",
+    "tsserver", -- typescript-language-server
+    "hls", -- haskell-language-server
 }
 
 local settings = {
