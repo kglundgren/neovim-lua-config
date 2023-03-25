@@ -14,12 +14,12 @@ vim.g.mapleader = ' '
 
 -- Leader
 map('n', '<leader>e', ':Lex<CR>', opts) -- Open netrw with \e.
-map('n', '<leader>x', ':q<CR>', opts) -- Quit with \x.
+map('n', '<leader>w', ':q<CR>', opts) -- Quit with \w.
 map('n', '<leader>n', ':bnext<CR>', opts) -- Navigate buffers.
 map('n', '<leader>b', ':bprevious<CR>', opts)
 map('n', '<leader>l', ':set nohlsearch!<CR>', opts)
-map('n', '<leader>v', ':vsplit', opts)
-map('n', '<leader>h', ':split', opts)
+map('n', '<leader>v', ':vsplit<CR>', opts)
+map('n', '<leader>h', ':split<CR>', opts)
 map('n', "<leader>kc", "<S-i>// <Esc>", opts) -- Comment line.
 map('v', "<leader>kc", ":norm i// <CR>", opts) -- Comment selected lines.
 map('n', "<leader>ku", "^3x", opts) -- Uncomment line.
@@ -30,6 +30,7 @@ map('n', '<leader>cd', ':cd %:h<CR>', opts) -- Change to the current dir.
 -- Windows-specific bindings
 if (vim.loop.os_uname().sysname == "Windows_NT") then
     map('n', '<C-c>', '<S-v>"*y', opts) -- Copy line with Ctrl+C.
+    map('v', '<C-c>', '"*y', opts) -- Copy visual selection with Ctrl+C.
 end
 
 -- Normal
