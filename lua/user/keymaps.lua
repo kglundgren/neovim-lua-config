@@ -14,7 +14,8 @@ vim.g.mapleader = ' '
 
 -- Leader
 map('n', '<leader>e', ':Lex<CR>', opts) -- Open netrw with \e.
-map('n', '<leader>w', ':q<CR>', opts) -- Quit with \w.
+map('n', '<leader>q', ':q<CR>', opts) -- Quit with \q.
+map('n', '<leader>w', ':w<CR>', opts) -- Save with \w.
 map('n', '<leader>n', ':bnext<CR>', opts) -- Navigate buffers.
 map('n', '<leader>b', ':bprevious<CR>', opts)
 map('n', '<leader>l', ':set nohlsearch!<CR>', opts)

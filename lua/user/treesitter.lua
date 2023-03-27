@@ -9,6 +9,7 @@ configs.setup {
         "c_sharp",
         "typescript",
         "haskell",
+        "cmake",
     },
     sync_install = false,
     ignore_install = { "" }, -- List of parsers to ignore installing.
