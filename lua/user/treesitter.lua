@@ -3,7 +3,7 @@ configs.setup {
     ensure_installed = {
         "lua",
         "vim",
-        "help",
+        "vimdoc",
         "c",
         "cpp",
         "c_sharp",

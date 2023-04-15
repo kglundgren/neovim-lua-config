@@ -2,7 +2,6 @@ local servers = {
     "lua_ls",
     "clangd",
     "tsserver", -- typescript-language-server
-    "hls", -- haskell-language-server
     "cmake",
 }
 

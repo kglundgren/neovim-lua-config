@@ -7,7 +7,6 @@ vim.cmd('set path+=**') -- Enables :find to search directories recursively.
 vim.cmd('set wildmenu') -- Enables tab-completion of files when using :find to search.
 vim.cmd('set showtabline=1') -- Show tab-line only if there are at least two tab pages.
 vim.cmd('set nowrap') -- No line-wrapping on long lines.
-vim.cmd('set shell=pwsh.exe') -- Sets Powershell as the default shell/terminal.
 
 -- Python --
 -- vim.g.python_host_prog = nil
