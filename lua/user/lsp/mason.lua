@@ -3,6 +3,7 @@ local servers = {
     "clangd",
     "tsserver", -- typescript-language-server
     "cmake",
+    "csharp_ls",
 }
 
 local settings = {
