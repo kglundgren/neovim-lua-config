@@ -2,7 +2,11 @@
 -- vim.g: Set global editor variables.
 -- vim.cmd: Executes an 'ex' command, like 'language en' or 'set path+=**'.
 
-vim.cmd('language messages en') -- Set ui and message language to English.
+-- Windows-specific options.
+local is_windows = require('user.windows')
+if is_windows() then
+	vim.cmd('language messages en') -- Set ui and message language to English.
+end
 vim.cmd('set path+=**') -- Enables :find to search directories recursively.
 vim.cmd('set wildmenu') -- Enables tab-completion of files when using :find to search.
 vim.cmd('set showtabline=1') -- Show tab-line only if there are at least two tab pages.

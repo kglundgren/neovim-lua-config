@@ -35,7 +35,6 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim' -- Packer can manage itself.
     use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from Vim in Neovim.
     use 'nvim-lua/plenary.nvim' -- Useful lua functions used by lots of plugins.
-    use 'windwp/nvim-autopairs' -- Autotomatically complete brackets and quotes. [] {} "" '', etc.
 
     -- Colorschemes
     use 'ellisonleao/gruvbox.nvim'
@@ -49,6 +48,7 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-path' -- Path completions.
     use 'hrsh7th/cmp-cmdline' -- Cmdline completions.
     use 'saadparwaiz1/cmp_luasnip' -- Snippet completions.
+    use 'windwp/nvim-autopairs' -- Autotomatically complete brackets and quotes. [] {} "" '', etc.
 
     -- Snippets
     use 'L3MON4D3/LuaSnip' -- Snippet engine. Luasnip completion source for nvim-cmp.

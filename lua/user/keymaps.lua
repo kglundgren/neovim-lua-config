@@ -21,15 +21,16 @@ map('n', '<leader>b', ':bprevious<CR>', opts)
 map('n', '<leader>l', ':set nohlsearch!<CR>', opts)
 map('n', '<leader>v', ':vsplit<CR>', opts)
 map('n', '<leader>h', ':split<CR>', opts)
-map('n', "<leader>kc", "<S-i>// <Esc>", opts) -- Comment line.
-map('v', "<leader>kc", ":norm i// <CR>", opts) -- Comment selected lines.
-map('n', "<leader>ku", "^3x", opts) -- Uncomment line.
-map('v', "<leader>ku", ":norm ^3x<CR>", opts) -- Uncomment selected lines.
+map('n', '<leader>kc', '<S-i>// <Esc>', opts) -- Comment line.
+map('v', '<leader>kc', ':norm i// <CR>', opts) -- Comment selected lines.
+map('n', '<leader>ku', '^3x', opts) -- Uncomment line.
+map('v', '<leader>ku', ':norm ^3x<CR>', opts) -- Uncomment selected lines.
 map('n', '<leader>`', ':below 20 split<CR>:terminal<CR>', opts) -- Open a terminal below the current split.
 map('n', '<leader>cd', ':cd %:h<CR>', opts) -- Change to the current dir.
 
 -- Windows-specific bindings
-if (vim.loop.os_uname().sysname == "Windows_NT") then
+local is_windows = require('user.windows')
+if is_windows() then
     map('n', '<C-c>', '<S-v>"*y', opts) -- Copy line with Ctrl+C.
     map('v', '<C-c>', '"*y', opts) -- Copy visual selection with Ctrl+C.
 end
