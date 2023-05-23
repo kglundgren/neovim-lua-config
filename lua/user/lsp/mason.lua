@@ -1,5 +1,5 @@
 local servers = {
-    "lua_ls",
+    -- "lua_ls", -- some kind of bug with this right now
     "clangd",
     "tsserver", -- typescript-language-server
     "cmake",
