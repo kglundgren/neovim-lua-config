@@ -1,9 +1,9 @@
 local servers = {
-    -- "lua_ls", -- some kind of bug with this right now
+    "lua_ls",
     "clangd",
     "tsserver", -- typescript-language-server
     "cmake",
-    "csharp_ls",
+    -- "csharp_ls",
 }
 
 local settings = {
